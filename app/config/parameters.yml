@@ -13,3 +13,6 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    node_bin:  /bin/node
+    node_path: [/usr/lib/node:/usr/lib/node_modules:/root/node_modules]
