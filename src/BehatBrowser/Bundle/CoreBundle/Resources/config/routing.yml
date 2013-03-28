@@ -1,0 +1,3 @@
+behat_browser_core_homepage:
+    pattern:  /
+    defaults: { _controller: BehatBrowserCoreBundle:Default:index }

@@ -1,0 +1,4 @@
+behat_browser_core:
+    resource: "@BehatBrowserCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
