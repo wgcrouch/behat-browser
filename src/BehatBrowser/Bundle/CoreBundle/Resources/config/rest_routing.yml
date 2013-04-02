@@ -2,6 +2,11 @@ behat_browser_api_definitions:
     type:     rest
     resource: BehatBrowser\Bundle\CoreBundle\Controller\DefinitionsController
     name_prefix: behat_browser_api
+
+behat_browser_api_features:
+    type:     rest
+    resource: BehatBrowser\Bundle\CoreBundle\Controller\FeaturesController
+    name_prefix: behat_browser_api
 #
 #itsallagileAPIBundle_stories:
 #    type:     rest
