@@ -103,3 +103,22 @@ swiftmailer:
 
 behat_browser_core:
     suitePath: %suite_path%
+
+fos_rest:
+    param_fetcher_listener: true
+    body_listener: true
+    format_listener: true
+    view:
+        view_response_listener: 'force'
+    routing_loader:
+        default_format: json
+    access_denied_listener:
+        json: true
+    exception:
+        codes:
+            'Symfony\Component\Routing\Exception\ResourceNotFoundException': 404
+            'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
+            
+sensio_framework_extra:
+  view:
+    annotations: false

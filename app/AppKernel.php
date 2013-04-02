@@ -24,6 +24,10 @@ class AppKernel extends Kernel
             new BehatBrowser\Bundle\CoreBundle\BehatBrowserCoreBundle(),
 
             new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
+
+            //FOS stuff
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new FOS\RestBundle\FOSRestBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

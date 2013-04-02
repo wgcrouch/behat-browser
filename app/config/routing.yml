@@ -2,3 +2,8 @@ behat_browser_core:
     resource: "@BehatBrowserCoreBundle/Resources/config/routing.yml"
     prefix:   /
 
+behat_browser_rest:
+    resource: "@BehatBrowserCoreBundle/Resources/config/rest_routing.yml"
+    prefix:   /api
+    type: rest
+
