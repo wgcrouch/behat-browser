@@ -1,6 +1,5 @@
 parameters:
-#    behat_browser_core.example.class: BehatBrowser\Bundle\CoreBundle\Example
-
+    core.suite_path: ''
 services:
 #    behat_browser_core.example:
 #        class: %behat_browser_core.example.class%

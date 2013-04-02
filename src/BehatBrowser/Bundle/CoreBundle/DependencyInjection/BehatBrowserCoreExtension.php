@@ -24,5 +24,7 @@ class BehatBrowserCoreExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        $container->setParameter("core.suite_path", $config['suitePath']);
     }
 }

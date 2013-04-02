@@ -13,3 +13,5 @@ parameters:
 
     node_bin:  /bin/node
     node_path: [/usr/lib/node:/usr/lib/node_modules:/root/node_modules]
+
+    suite_path: /home/sites/behat-tests

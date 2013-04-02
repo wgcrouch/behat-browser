@@ -100,3 +100,6 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+behat_browser_core:
+    suitePath: %suite_path%
