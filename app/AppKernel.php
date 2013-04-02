@@ -22,6 +22,8 @@ class AppKernel extends Kernel
 
             new Braincrafted\BootstrapBundle\BraincraftedBootstrapBundle(),
             new BehatBrowser\Bundle\CoreBundle\BehatBrowserCoreBundle(),
+
+            new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

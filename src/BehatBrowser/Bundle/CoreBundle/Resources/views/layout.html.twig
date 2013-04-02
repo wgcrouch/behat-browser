@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap 101 Template</title>
+  <!-- Bootstrap -->    
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+
+</head>
+<body>
+  {% block body %}
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span2">
+          {% block sidebar %}
+          {% endblock %}
+        </div>
+        <div class="span10">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ asset('js/jquery.js') }}"><\/script>')</script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+  {% endblock %}
+</body>
+</html>
