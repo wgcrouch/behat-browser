@@ -13,6 +13,12 @@ behat_browser_api_scenarios:
     parent:   behat_browser_api_features
     resource: BehatBrowser\Bundle\CoreBundle\Controller\ScenariosController
     name_prefix: behat_browser_api
+
+behat_browser_api_definition_features:
+    type:     rest
+    parent:   behat_browser_api_definitions
+    resource: BehatBrowser\Bundle\CoreBundle\Controller\DefinitionFeaturesController
+    name_prefix: behat_browser_api
 #
 #itsallagileAPIBundle_tickets:
 #    type:     rest
