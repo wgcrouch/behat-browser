@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <h2>Feature: {{feature.name}}</h2>
+    <p>
+    {{feature.description}}
+    </p>
+    
+
+    <p class="scenario" ng-repeat="scenario in feature.scenarios">
+        <span ng-repeat="tag in scenario.tags">@{{tag}} </span><br/>
+        <strong>{{scenario.type}}: {{scenario.title}}</strong><br/>
+        <a class="step" href="#/definition/{{step.definition.id}}" ng-repeat="step in scenario.steps">
+            <strong>{{step.type}}</strong> {{step.text}}<br/>
+        </a>
+    </p><br/>
+
+  </div>  
+</div>

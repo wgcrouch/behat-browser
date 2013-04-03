@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <h2>Definition: {{definition.regex}}</h2>
+    <em>{{definition.path}}</em>
+    <p>{{definition.description}}</p>
+
+    <h3>Features using this definition:</h3>
+
+    <ul class="features">
+        <li ng-repeat="feature in features">
+          <a href="#/feature/{{feature.id}}">{{feature.name}}</a>
+          <p><pre>{{feature.description}}</pre></p>
+        </li>
+      </ul>
+    </div> 
+  </div>  
+</div>

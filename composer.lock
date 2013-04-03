@@ -1,6 +1,17 @@
 {
-    "hash": "797a0361f40ae5c5cbfe21d41050c199",
+    "hash": "d526cf7de27668eec143789fac0c3b23",
     "packages": [
+        {
+            "name": "angular/angular",
+            "version": "1.0.5",
+            "dist": {
+                "type": "file",
+                "url": "https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
         {
             "name": "behat/behat",
             "version": "v2.4.5",

@@ -67,6 +67,10 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../vendor/jquery/jquery/jquery-1.9.1.js
             output: js/jquery.js
+        angular:
+            inputs:
+                - %kernel.root_dir%/../vendor/angular/angular/angular.min.js
+            output: js/angular.js
 
 # Doctrine Configuration
 doctrine:

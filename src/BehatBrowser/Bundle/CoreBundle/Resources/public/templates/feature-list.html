@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <h2>Features</h2>
+  <div class="row-fluid">
+
+    <div class="span2">
+      <!--Sidebar content--> 
+      Search: <input ng-model="query"> 
+      Sort by:
+        <select ng-model="orderProp">
+          <option value="name">Name</option>
+          <option value="description">Description</option>
+        </select>
+    </div>
+    <div class="span10">
+     <ul class="features">
+        <li ng-repeat="feature in features | filter:query | orderBy:orderProp">
+          <a href="#/feature/{{feature.id}}">{{feature.name}}</a>
+          <pre>{{feature.description}}</pre>
+        </li>
+      </ul>
+    </div>  
+  </div>
+</div>

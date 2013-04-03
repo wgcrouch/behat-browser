@@ -16,6 +16,17 @@
                     "type": "file"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "angular/angular",
+                "version": "1.0.5",
+                "dist": {
+                    "url": "https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js",
+                    "type": "file"
+                }
+            }
         }
     ],
 
@@ -37,6 +48,8 @@
         "braincrafted/bootstrap-bundle": "dev-master",
         "twitter/bootstrap": "2.3.*",
         "jquery/jquery": "1.9.*",
+
+        "angular/angular": "1.0.5",
 
         "behat/behat": "2.4.*@stable",
 
