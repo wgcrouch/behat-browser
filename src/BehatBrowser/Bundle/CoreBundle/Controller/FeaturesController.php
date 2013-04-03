@@ -12,10 +12,8 @@ class FeaturesController extends FOSRestController
     /**
      * Get a single feature
      */
-    public function getFeatureAction($feature)
+    public function getFeatureAction(Feature $feature)
     {
-        $repository = $this->get('doctrine_mongodb')->getRepository('BehatBrowserCoreBundle:Feature');
-        $feature = $repository->find($feature);
         return $feature;
     }
 

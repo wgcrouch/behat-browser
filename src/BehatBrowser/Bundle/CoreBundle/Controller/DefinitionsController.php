@@ -12,10 +12,8 @@ class DefinitionsController extends FOSRestController
     /**
      * Get a single definition
      */
-    public function getDefinitionAction($definition)
+    public function getDefinitionAction(Definition $definition)
     {
-        $repository = $this->get('doctrine_mongodb')->getRepository('BehatBrowserCoreBundle:Definition');
-        $definition = $repository->find($definition);
         return $definition;
     }
 

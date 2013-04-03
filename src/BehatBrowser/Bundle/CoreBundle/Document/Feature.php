@@ -194,4 +194,14 @@ class Feature
     public function clearScenarios() {
         $this->scenarios = new ArrayCollection();
     }
+
+    public function getScenario($id)
+    {
+        foreach ($this->scenarios as $scenario) {
+            if ($id == $scenario->getId()) {
+                return $scenario;
+            }
+        }
+        return null;
+    }
 }

@@ -1,5 +1,5 @@
 {
-    "hash": "dde9e277f250a7880647d1b9caeda9a3",
+    "hash": "797a0361f40ae5c5cbfe21d41050c199",
     "packages": [
         {
             "name": "behat/behat",
@@ -1913,27 +1913,27 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v2.2.0",
+            "version": "dev-master",
             "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensio/SensioFrameworkExtraBundle.git",
-                "reference": "v2.2.0"
+                "reference": "9c6e7cfe2daa73b0b2cea23053391e726825b3fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensio/SensioFrameworkExtraBundle/zipball/v2.2.0",
-                "reference": "v2.2.0",
+                "url": "https://api.github.com/repos/sensio/SensioFrameworkExtraBundle/zipball/9c6e7cfe2daa73b0b2cea23053391e726825b3fe",
+                "reference": "9c6e7cfe2daa73b0b2cea23053391e726825b3fe",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": ">=2.2,<3.0",
-                "symfony/framework-bundle": "2.2.*"
+                "symfony/framework-bundle": ">=2.2,<3.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-master": "2.3.x-dev"
                 }
             },
             "autoload": {
@@ -1956,7 +1956,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2013-02-28 14:13:52"
+            "time": "2013-04-02 17:15:21"
         },
         {
             "name": "sensio/generator-bundle",
@@ -2462,6 +2462,7 @@
     ],
     "minimum-stability": "alpha",
     "stability-flags": {
+        "sensio/framework-extra-bundle": 20,
         "braincrafted/bootstrap-bundle": 20,
         "behat/behat": 0
     },

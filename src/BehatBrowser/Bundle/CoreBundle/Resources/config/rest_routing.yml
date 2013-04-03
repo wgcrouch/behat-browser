@@ -7,12 +7,12 @@ behat_browser_api_features:
     type:     rest
     resource: BehatBrowser\Bundle\CoreBundle\Controller\FeaturesController
     name_prefix: behat_browser_api
-#
-#itsallagileAPIBundle_stories:
-#    type:     rest
-#    parent:   itsallagileAPIBundle_boards
-#    resource: itsallagile\APIBundle\Controller\StoriesController
-#    name_prefix: itsallagileAPIBundle_
+
+behat_browser_api_scenarios:
+    type:     rest
+    parent:   behat_browser_api_features
+    resource: BehatBrowser\Bundle\CoreBundle\Controller\ScenariosController
+    name_prefix: behat_browser_api
 #
 #itsallagileAPIBundle_tickets:
 #    type:     rest

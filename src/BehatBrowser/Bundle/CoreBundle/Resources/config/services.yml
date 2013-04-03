@@ -1,6 +1,9 @@
 parameters:
     core.suite_path: ''
+
 services:
-#    behat_browser_core.example:
-#        class: %behat_browser_core.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    behat_browser_core.converter.doctrine.mongodb:
+        class: Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter
+        arguments: [@doctrine_mongodb]
+        tags:
+            - { name: request.param_converter }
