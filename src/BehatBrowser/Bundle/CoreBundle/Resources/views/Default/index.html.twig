@@ -3,26 +3,13 @@
 {% block content %}{% verbatim %}
 
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar" bs-navbar>
       <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="./">Behat Browser</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="">
-                <a href="#/features">Features</a>
-              </li>
-              <li class="">
-                <a href="#/definitions">Definitions</a>
-              </li>              
-            </ul>
-          </div>
-        </div>
+        <a class="brand" href="#">Behat Browser</a>
+        <ul class="nav">
+          <li data-match-route="/feature.*"><a href="#/features">Features</a></li>
+          <li data-match-route="/definition.*"><a href="#/definitions">Definitions</a></li>
+        </ul>
       </div>
     </div>
 

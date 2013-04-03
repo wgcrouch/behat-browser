@@ -1,4 +1,4 @@
-angular.module('behatBrowser', ['behatBrowserFilters']).
+angular.module('behatBrowser', ['behatBrowserFilters','$strap.directives']).
   config(['$routeProvider', function($routeProvider) {
 
   basePath = "bundles/behatbrowsercore/templates/"
