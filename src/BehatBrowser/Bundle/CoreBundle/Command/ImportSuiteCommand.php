@@ -73,6 +73,7 @@ class ImportSuiteCommand extends ContainerAwareCommand
             $definition->setDescription($details->description);
             $definition->setPath($details->path);
             $definition->setRegex($regex);
+            $definition->setType($details->type);
 
             $this->definitions[$regex] = $definition;
             $dm->persist($definition);

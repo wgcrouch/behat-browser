@@ -33,6 +33,11 @@ class Definition
     /**
      * @MongoDB\Field(type="string")
      */
+    protected $type;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
     protected $path;
 
 
@@ -110,5 +115,27 @@ class Definition
     public function getPath()
     {
         return $this->path;
+    }
+
+    /**
+     * Set type
+     *
+     * @param string $type
+     * @return \Definition
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * Get type
+     *
+     * @return string $type
+     */
+    public function getType()
+    {
+        return $this->type;
     }
 }

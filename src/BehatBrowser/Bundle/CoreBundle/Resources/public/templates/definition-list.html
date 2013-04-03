@@ -4,9 +4,10 @@
 
     <div class="span2">
       <!--Sidebar content--> 
-      Search: <input ng-model="query"> 
+      Search: <input type="text" ng-model="query"> 
       Sort by:
         <select ng-model="orderProp">
+          <option value="type">Type</option>
           <option value="regex">Regex</option>
           <option value="description">Description</option>
           <option value="path">Path</option>
@@ -15,7 +16,7 @@
     <div class="span10">
      <ul class="definitions">
         <li ng-repeat="definition in definitions | filter:query | orderBy:orderProp">
-          <a href="#/definition/{{definition.id}}">{{definition.regex}}</a>          
+          <a href="#/definition/{{definition.id}}">{{definition.type}} {{definition.regex}}</a>          
           <p>
             {{definition.description}}<br/>
             <em>{{definition.path}}</em>
