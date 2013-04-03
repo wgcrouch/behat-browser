@@ -33,6 +33,7 @@
 {% block endscript %}
     {{ parent() }}
     {% javascripts    
+        '@BehatBrowserCoreBundle/Resources/public/js/filters.js'
         '@BehatBrowserCoreBundle/Resources/public/js/app.js'
         '@BehatBrowserCoreBundle/Resources/public/js/controllers.js'
     %}

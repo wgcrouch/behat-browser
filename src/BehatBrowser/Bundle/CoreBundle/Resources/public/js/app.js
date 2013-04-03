@@ -1,4 +1,4 @@
-angular.module('behatBrowser', []).
+angular.module('behatBrowser', ['behatBrowserFilters']).
   config(['$routeProvider', function($routeProvider) {
 
   basePath = "bundles/behatbrowsercore/templates/"
@@ -10,3 +10,4 @@ angular.module('behatBrowser', []).
       otherwise({redirectTo: '/definitions'})
 
 }]);
+
